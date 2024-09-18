@@ -319,7 +319,7 @@ def dlaplace(x: Union[float, List[float], np.ndarray], location: float = 0, scal
     x = np.asarray(x)
     return laplace.pdf(x, loc=location, scale=scale)
 
-def plaplace(q: Union[float, List[float], np.ndarray], location: float = 0, scale: float = 1,, lower_tail: bool = True) -> np.ndarray:
+def plaplace(q: Union[float, List[float], np.ndarray], location: float = 0, scale: float = 1, lower_tail: bool = True) -> np.ndarray:
     q = np.asarray(q)
     cdf = laplace.cdf(q, loc=location, scale=scale)
     return cdf if lower_tail else 1 - cdf
