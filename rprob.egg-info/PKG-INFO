@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: rprob
-Version: 1.0.0
+Version: 1.0.1
 Summary: A library to use R style probability distribution functions in Python
 Home-page: https://github.com/jinwook-chang/rprob
 Author: Jinwook Chang
