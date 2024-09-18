@@ -8,3 +8,5 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+pyproject.toml
+rprob.egg-info/
