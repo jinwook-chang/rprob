@@ -1,10 +1,10 @@
-   __pycache__/
-   *.pyc
-   .DS_Store
-   .env
-   .venv
-   .idea/
-   .vscode/
-   dist/
-   build/
-   *.egg-info/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
