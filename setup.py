@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='rprob',  # 패키지 이름
-    version='1.0.0',  # 버전
+    version='1.0.1',  # 버전
     description='A library to use R style probability distribution functions in Python',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
