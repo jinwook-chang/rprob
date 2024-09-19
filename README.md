@@ -2,6 +2,9 @@
 
 `rprob` is a Python package that provides a `R` style collection of functions for generating random numbers, computing densities, distribution functions, quantile functions, and more for various statistical distributions.
 
+[pypi](https://pypi.org/project/rprob/)
+[github](https://github.com/jinwook-chang/rprob)
+
 ## Installation
 
 To install `rprob`, you can use pip:
