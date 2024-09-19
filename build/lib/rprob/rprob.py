@@ -361,3 +361,23 @@ def rmvnorm(n: int, mean: List[float], cov: np.ndarray) -> np.ndarray:
 
 def dmvnorm(x: np.ndarray, mean: List[float], cov: np.ndarray) -> np.ndarray:
     return multivariate_normal.pdf(x, mean=mean, cov=cov)
+
+# Bernoulli distribution functions
+def rbern(n: int, prob: float) -> np.ndarray:
+    return bernoulli.rvs(p=prob, size=n)
+
+def dbern(x: Union[int, List[int], np.ndarray], prob: float) -> np.ndarray:
+    x = np.asarray(x)
+    return bernoulli.pmf(x, p=prob)
+
+def pbern(q: Union[int, List[int], np.ndarray], prob: float, lower_tail: bool = True) -> np.ndarray:
+    q = np.asarray(q)
+    cdf = bernoulli.cdf(q, p=prob)
+    return cdf if lower_tail else 1 - cdf
+
+def qbern(p: Union[float, List[float], np.ndarray], prob: float, lower_tail: bool = True) -> np.ndarray:
+    if not lower_tail:
+        p = 1 - p
+    return bernoulli.ppf(p, p=prob)
+
+
