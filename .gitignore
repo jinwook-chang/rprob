@@ -12,3 +12,4 @@ pyproject.toml
 rprob.egg-info/
 pyproject.toml
 /build/lib/*
+/build/lib
