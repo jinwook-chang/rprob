@@ -19,6 +19,5 @@ from .rprob import (
     rcauchy, dcauchy, pcauchy, qcauchy,
     rlaplace, dlaplace, plaplace, qlaplace,
     rlnorm, dlnorm, plnorm, qlnorm,
-    rmultinom, dmultinom,
-    rmvnorm, dmvnorm
+    rbern, dbern, pbern, qbern
 )

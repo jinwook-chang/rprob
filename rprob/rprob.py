@@ -3,8 +3,7 @@
 import numpy as np
 from scipy.stats import (
     norm, uniform, binom, poisson, expon, gamma, beta, t, chi2, f, geom,
-    nbinom, hypergeom, weibull_min, logistic, cauchy, laplace, lognorm,
-    multinomial, multivariate_normal
+    nbinom, hypergeom, weibull_min, logistic, cauchy, laplace, lognorm, bernoulli
 )
 from typing import Union, List
 
@@ -346,21 +345,6 @@ def qlnorm(p: Union[float, List[float], np.ndarray], meanlog: float = 0, sdlog: 
     if not lower_tail:
         p = 1 - p
     return lognorm.ppf(p, s=sdlog, scale=np.exp(meanlog))
-
-# Multinomial distribution functions
-def rmultinom(n: int, size: int, prob: List[float]) -> np.ndarray:
-    return multinomial.rvs(n=size, p=prob, size=n)
-
-def dmultinom(x: Union[List[int], np.ndarray], size: int, prob: List[float]) -> np.ndarray:
-    x = np.asarray(x)
-    return multinomial.pmf(x, n=size, p=prob)
-
-# Multivariate normal distribution functions
-def rmvnorm(n: int, mean: List[float], cov: np.ndarray) -> np.ndarray:
-    return multivariate_normal.rvs(mean=mean, cov=cov, size=n)
-
-def dmvnorm(x: np.ndarray, mean: List[float], cov: np.ndarray) -> np.ndarray:
-    return multivariate_normal.pdf(x, mean=mean, cov=cov)
 
 # Bernoulli distribution functions
 def rbern(n: int, prob: float) -> np.ndarray:
