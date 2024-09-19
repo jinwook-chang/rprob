@@ -6,11 +6,12 @@ __pycache__/
 .idea/
 .vscode/
 dist/
-build/
 *.egg-info/
 pyproject.toml
 rprob.egg-info/
 pyproject.toml
 /build/lib/*
 /build/lib
+build/lib/rprob/__init__.py
+build/lib/rprob/rprob.py
 build/lib/rprob/__init__.py
