@@ -13,3 +13,4 @@ rprob.egg-info/
 pyproject.toml
 /build/lib/*
 /build/lib
+build/lib/rprob/__init__.py
