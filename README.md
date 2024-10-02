@@ -25,4 +25,8 @@ print(random_numbers)
 ```
 
 
+## Notice
+
+Since `df` is reserved keywords, `df` function in R is replaced as `df_`.
+Please be careful to use it.
 
